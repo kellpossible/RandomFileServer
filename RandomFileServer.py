@@ -28,8 +28,8 @@ f = open(os.path.join(os.getcwd(), "GhettoDropbox/config.json"),"r")
 config = json.load(f)
 f.close()
 
-port = json["port"]
-ip = str(json["ip"])
+port = config["port"]
+ip = str(config["ip"])
 
 shares_data_file_path = os.path.join(os.getcwd(), "GhettoDropbox/shares_data.txt")
 shares_file_path = os.path.join(os.getcwd(), "GhettoDropbox/shares.txt")
